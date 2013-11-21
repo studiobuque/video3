@@ -1,0 +1,129 @@
+a{
+	color: #4c4326;
+}
+body{
+	font-family: Convergence;
+	font-size: 16px;
+	font-weight: 400;
+}
+#cabeza{
+	background: rgba(255,255,255,0.9);/*#f7eac5*/
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 3px 1.2em rgba(0,0,0,0.1);
+	display: block;
+	height: 70px;
+	left: 0px;
+	margin-bottom: 70px;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 2000;
+}
+#cabeza #logo_cabeza{
+	color:#0066ff;
+	font-size: 2em;
+	text-align: center;
+}
+#contenido{
+	
+}
+/* Footer*/
+
+footer{
+	background: rgba(0,0,0,0.2);
+	position: relative;
+	height: 300px;
+}
+
+/* Menu */
+#menu_cabeza{
+	padding: 1.5em;
+}
+#menu_cabeza ul{
+	list-style: none;
+	float: right;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+#menu_cabeza ul li{
+	display: inline-block;
+}
+#menu_cabeza ul li a{
+	text-decoration: none;
+}
+#menu_cabeza .paginas li{
+	border-right: 1px solid rgba(0,0,0,0.1);
+	border-radius: 0.2em;
+}
+#menu_cabeza .paginas li:last-child{
+	border-right: 1px solid transparent;
+	
+}
+#menu_cabeza .paginas li a{
+	padding: 0.2em 0.5em;
+	margin: 0 0.5em;
+}#menu_cabeza .paginas li a:hover{
+	background: rgb(245,245,245);
+}
+
+.titulo_entrada{
+	font-size: 4em;
+	
+}
+#primera_entrada_corte{
+	clear: both;
+}
+#primera_entrada{
+	background: url(http://www.sxc.hu/pic/l/m/ma/mancity/603001_65851823.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	color: #fff;
+	padding-top: 70px;
+	position: relative;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+	width: 100%;
+	overflow: hidden;
+}
+#primera_entrada p{
+	font-size: 1.2em;
+}
+
+/* Grid */
+.container {
+	padding: 0px 20px;
+}
+
+.row {
+	width: 100%;
+	max-width: 1020px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.cols { 
+	float: left; 
+	margin-left: 1.66667%; 
+	min-height: 1px; 
+	position: relative; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.cols:first-child, .alpha { 
+	margin-left: 0px;
+}
+
+.row .two.cols { width: 15.27778%; }
+.row .three.cols { width: 23.75%; }
+.row .four.cols { width: 32.22222%; }
+.row .five.cols { width: 40.69444%; }
+.row .six.cols { width: 49.16667%; }
+.row .seven.cols { width: 57.63889%; }
+.row .eight.cols { width: 66.11111%; }
+.row .nine.cols { width: 74.58333%; }
+.row .ten.cols { width: 83.05556%; }
+.row .eleven.cols { width: 91.52778%; }
+.row .twelve.cols { width: 100%; }
+

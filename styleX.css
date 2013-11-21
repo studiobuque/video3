@@ -1,0 +1,107 @@
+a{
+	color: #4c4326;
+}
+body{
+	font-family: Convergence;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+#cabeza{
+	background: #e3e3e3;
+}
+#cabeza #logo_cabeza{
+	color:#0066ff;
+	display: block;
+	font-size: 5em;
+	text-align: center;
+}
+#menu_cabeza ul{
+	display: none;
+}
+footer{
+	background: #e3e3e3;
+}
+
+/* Escritorio */
+@media only screen and (min-width: 940px) {/*min-width: 767px*/
+
+body, html{
+	height: 100%;
+	overflow: hidden;
+}
+#cabeza{
+	background: #e3e3e3;
+	display: inline-block;
+	float: right;
+	height: 100%;
+	margin: 0 auto;
+	margin-left: 1.66667%;
+	/*min-width: 300px;*/
+	width: 32.22222%;
+}
+#contenido{
+	background: #fff;
+	display: inline-block;
+	height: 100%;
+	margin: 0 auto;
+	margin-left: 0px;
+	/*min-width: 640px;*/
+	overflow:hidden;
+	overflow-y:scroll;
+	width: 66.11111%;
+}
+
+#cabeza #logo_cabeza{
+	color:#0066ff;
+	display: block;
+	font-size: 5em;
+	margin: 16px auto;
+	text-align: center;
+	width: 100%;
+}
+footer{
+	width: 32.22222%;
+	display: inline-block;
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+#menu_cabeza ul{
+	display: block;
+	font-size: 1.6em;
+	list-style: none;
+	margin: 1em;
+	padding: 0;
+}
+#menu_cabeza ul li a {
+	border-left: 0.5em solid white;
+	display: block;
+	padding: 0.7em 0.5em;
+	text-decoration: none;
+}
+#menu_cabeza ul li a:hover{
+	border-left-color: #9d9d9d;
+}
+#primera_entrada_corte{
+	clear: both;
+}
+#primera_entrada{
+	background: url(http://www.sxc.hu/pic/l/m/ma/mancity/603001_65851823.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	color: #fff;
+	padding-top: 70px;
+	position: relative;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+	width: 100%;
+	overflow: hidden;
+}
+#primera_entrada p{
+	font-size: 1.2em;
+}
+
+}
