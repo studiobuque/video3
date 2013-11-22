@@ -55,6 +55,9 @@ nav {
 .parallax div{
 	margin-top: 70px;
 }
+.wrap{
+	padding-top: 70px;
+}
 
 /* Entradas */
 .titulo_entrada{
@@ -94,6 +97,10 @@ nav {
 
 }
 
+/* Hack wordpress*/
+.admin-bar, .admin-bar .cabeza {
+	margin-top: 20px;
+}
 
 /* Grid */
 .container {

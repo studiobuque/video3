@@ -1,6 +1,6 @@
 <footer class="footer" role="contentinfo">
 	
-	<div id="inner-footer" class="wrap clearfix">
+	<div id="inner-footer" class="row wrap clearfix">
 		
 		<nav role="navigation">
 			
