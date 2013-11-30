@@ -5,11 +5,28 @@ body{
 	font-family: Convergence;
 	font-size: 16px;
 	font-weight: 400;
+	color: #404040;
 }
 .cabeza_logo{
 	color: #0066ff;
 	font-size: 3em;
 	text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0.2em 0;
+}
+h1, .h1{
+	font-size: 4em;
+	font-weight: bold;
+}
+h2, .h2{
+	font-size: 3.4em;
+}
+h3, .h3{
+	font-size: 2.2em;
 }
 header.cabeza{
 	border: 1px solid rgba(0,0,0,0.1);
@@ -45,15 +62,46 @@ nav {
 	background: rgb(240,240,240);
 }
 .parallax{
+	color: #fff;
+	font-weight: bolder;
+	position: relative;
+	padding: 2em;
+	z-index: 1;
+	/*background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+	margin: 0;
+	
 	height: 600px;
-	/*margin-top:70px;*/
-	padding: 2em 0;
+	margin-top:70px;
+	*/
 
+}
+.parallax:before{
+	content: "";
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	width: 1800px;
+	z-index: -1;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
 }
 .parallax div{
 	margin-top: 70px;
+}
+.parallax.fix, .fix:before{
+	background-attachment: fixed;
+}
+.parallax.mt-70{
+	margin-top: -70px;
+	padding-top: 140px;
 }
 .wrap{
 	padding-top: 70px;
@@ -63,6 +111,24 @@ nav {
 .titulo_entrada{
 	font-size: 4em;
 }
+
+.bordeAbajo{
+	border-bottom: 1px solid #dfe8e9;/*#dfe8e9*/
+	padding-bottom: 80px;
+}
+.cajaPaquete{
+	background: rgba(180,180,180,0.1);/*rgba(255,255,255,0.9)*/
+	border-radius: 0.5em;
+	border: 1px solid #ccc;
+	height: 670px;
+	margin-top: 2em;
+	padding: 1em;
+	
+}
+
+/* =============================
+ * Responsive Design
+ */
 
 /* Escritorio */
 @media only screen and (min-width: 767px) {
@@ -84,7 +150,7 @@ header.cabeza{
 
 }
 
-/* Movil*/
+/*  Movil */
 
 @media only screen and (max-width: 767px) {
 
@@ -97,19 +163,16 @@ nav {
 
 }
 
-/* Hack wordpress*/
-.admin-bar, .admin-bar .cabeza {
-	margin-top: 20px;
-}
-
-/* Grid */
+/* =============================
+ * Grid
+ */
 .container {
 	padding: 0px 20px;
 }
 
 .row {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1020px;/*960px*/
 	min-width: 320px;
 	margin: 0 auto;
 }
@@ -151,4 +214,52 @@ nav {
 .cols { width: auto !important; float: none; margin-left: 0; margin-right: 0; }
 .cols:last-child { margin-right: 0; float: none; }
   
+}
+
+/* =============================
+ * Hack wordpress
+ */
+.admin-bar .cabeza {
+	margin-top: 28px !important;
+}
+
+/* Recommended by http://codex.wordpress.org/CSS */
+.aligncenter, div.aligncenter
+{
+	display: block;
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.alignleft
+{
+	float: left;
+}
+.alignright
+{
+	float: right;
+}
+.wp-caption
+{
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	margin: 10px; 
+	padding-top: 4px; 
+	text-align: center;
+}
+.wp-caption img
+{
+	border: 0 none;
+	margin: 0; 
+	padding: 0; 
+}
+.wp-caption p.wp-caption-text
+{
+	font-size: 0.68em; 
+	line-height: 17px;
+	margin: 0; 
+	padding: 0 4px 5px; 
+}
+.hidden
+{
+	display: none;
 }
